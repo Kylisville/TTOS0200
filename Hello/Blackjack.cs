@@ -17,13 +17,17 @@ class BlackJack
             //reading and converting 
             theirNumber = System.Convert.ToInt32(System.Console.ReadLine());
             //comparing that given umber is valid
-            if (theirNumber < 1 || theirNumber > 21)
-            {
-                Console.WriteLine("The given number is out of limits, try again.");
-            }
+
+            
+                if (theirNumber < 1 || theirNumber > 21)
+                {
+                    Console.WriteLine("The given number is out of limits, try again.");
+                }
+            
             else
             {
                 //comparing
+               
                 if (theirNumber >= myNumber && theirNumber <= 21)
                 {
                     System.Console.WriteLine("You win.");
