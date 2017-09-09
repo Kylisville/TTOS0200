@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 //Esa's demo softa tehty 11.1.2017
 //nimiavaruus muutettu
 
-namespace JAMK.IT
+namespace Labrat
 {
     public class Demo
     {
