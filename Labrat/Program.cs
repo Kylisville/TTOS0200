@@ -10,15 +10,20 @@ namespace Labrat
     {
         static void Main(string[] args)
         {
-            //Labrat.labra01.Tehtava1();
-            // Labrat.labra02.Tehtava2();
-            //Labrat.labra03.Tehtava3();
-            //Labrat.labra04.Tehtava4();
-            //Labrat.labra05.Tehtava5();
-            //Labrat.labra06.Tehtava6();
-            //Labrat.labra07.Tehtava7();
-            //Labrat.labra08.Tehtava8();
-            Labrat.labra09.Tehtava9();
+            //Labrat.harjoitus1.Tehtava1();
+            // Labrat.harjoitus2.Tehtava2();
+            //Labrat.harjoitus3.Tehtava3();
+            //Labrat.harjoitus4.Tehtava4();
+            //Labrat.harjoitus5.Tehtava5();
+            //Labrat.harjoitus6.Tehtava6();
+            //Labrat.harjoitus7.Tehtava7();
+            //Labrat.harjoitus8.Tehtava8();
+            //Labrat.harjoitus9.Tehtava9();
+            //Labrat.harjoitus10.Tehtava10();
+            //Labrat.harjoitus11.Tehtava11();
+            //Labrat.harjoitus12.Tehtava12();
+            Labrat.harjoitus13.Tehtava13();
         }
+    
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Labrat
 {
-    class labra04
+    class harjoitus4
     {
         public static void Tehtava4()
         {
