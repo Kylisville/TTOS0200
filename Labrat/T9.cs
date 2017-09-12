@@ -9,7 +9,11 @@ namespace Labrat
     class harjoitus9
     {
         public static void Tehtava9()
+        
         {
+            //Tee ohjelma, joka kysyy käyttäjältä lukuja, kunnes hän syöttää luvun 0. Ohjelman tulee tulostaa syötettyjen lukujen summa.
+
+
             List<int> luvut = new List<int>();
             for (int x = 1; ; x++)
             {

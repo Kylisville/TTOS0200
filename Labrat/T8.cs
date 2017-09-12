@@ -11,6 +11,8 @@ namespace Labrat
         public static void Tehtava8()
         {
 
+            //Tee ohjelma, joka kysyy käyttäjältä 3 kokonaislukua ja tulostaa niistä suurimman.
+
             int luku1, luku2, luku3;
             Console.Write("Anna luku:");
             luku1 = Convert.ToInt32(Console.ReadLine());

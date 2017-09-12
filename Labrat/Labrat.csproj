@@ -42,10 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="T17.cs" />
+    <Compile Include="T16.cs" />
+    <Compile Include="T15.cs" />
+    <Compile Include="T14.cs" />
     <Compile Include="T13.cs" />
     <Compile Include="T12.cs" />
     <Compile Include="T11.cs" />
     <Compile Include="T10.cs" />
+    <Compile Include="T18.cs" />
     <Compile Include="T9.cs" />
     <Compile Include="T8.cs" />
     <Compile Include="T7.cs" />

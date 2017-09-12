@@ -10,20 +10,23 @@ namespace Labrat
     {
         public static void Tehtava13()
         {
+            //Mäkihypyssä käytetään viittä arvostelutuomaria.
+            //Kirjoita ohjelma, joka kysyy arvostelupisteet yhdelle hypylle ja tulostaa tyylipisteiden summan siten, että summasta on vähennetty pois pienin ja suurin tyylipiste.
+
             int givenScore = new int();
-            List<int> allScores = new List<int>(new int[5]);
+            List<int> kokonaispisteet = new List<int>(new int[5]);
             for (int x = 0; x < 5; x++)
             {
-                Console.Write("Judge " + (x + 1) + "/5 enter your score: ");
+                Console.Write("tuomari " + (x + 1) + "/5 anna pisteet: ");
                 givenScore = int.Parse(Console.ReadLine());
-                allScores[x] = givenScore;
+                kokonaispisteet[x] = givenScore;
 
             }
             //poistaa minimi- ja maksimiarvot
-            allScores.Remove(allScores.Max());
-            allScores.Remove(allScores.Min());
+            kokonaispisteet.Remove(kokonaispisteet.Max());
+            kokonaispisteet.Remove(kokonaispisteet.Min());
 
-            Console.WriteLine("Skijumper gets: " + allScores.Sum() + " points!");
+            Console.WriteLine("hyppääjä: " + kokonaispisteet.Sum() + " pistettä!");
         }
     }
 }

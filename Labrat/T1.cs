@@ -18,7 +18,7 @@ namespace Labrat
             
             Console.WriteLine("Anna luku > ");
             int luku = Convert.ToInt32(Console.ReadLine());
-            
+            // tarkistaa onko syöttö 1-3
                 if (luku == 1)
             {
                 Console.WriteLine("Annoit luvun yksi");

@@ -23,6 +23,11 @@ namespace Labrat
             //Labrat.harjoitus11.Tehtava11();
             //Labrat.harjoitus12.Tehtava12();
             Labrat.harjoitus13.Tehtava13();
+            //Labrat.harjoitus14.Tehtava14();
+            //Labrat.harjoitus15.Tehtava15();
+            //Labrat.harjoitus16.Tehtava16();
+            //Labrat.harjoitus17.Tehtava17();
+            //Labrat.harjoitus18.Tehtava18();
         }
     
     }

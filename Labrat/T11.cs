@@ -10,6 +10,12 @@ namespace Labrat
     {
         public static void Tehtava11()
         {
+           // Tee kahden sisäkkäisen for-silmukan avulla ohjelma, joka tulostaa seuraavanlaisen kuvion:
+             // *
+             // **
+             // ***
+             // ****
+           //   *****
 
             Console.WriteLine("Syötä tähtien lukumäärä: ");
             int input = int.Parse(Console.ReadLine());

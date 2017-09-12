@@ -10,7 +10,9 @@ namespace Labrat
     {
         public static void Tehtava7()
         {
-                Console.WriteLine("Syötä vuosi:");
+            //Tee ohjelma, joka näyttää onko annettu vuosi karkausvuosi. Vuosiluku kysytään käyttäjältä.
+
+            Console.WriteLine("Syötä vuosi:");
                 int year = int.Parse(Console.ReadLine());
                 if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
                 {

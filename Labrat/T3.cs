@@ -9,6 +9,7 @@ namespace Labrat
     class harjoitus3
     {
         public static void Tehtava3()
+        //Tee ohjelma, joka kysyy käyttäjältä kolme lukua ja tulostaa niiden summan ja keskiarvon.
         {
             Console.WriteLine("Syötä kolme lukua yksi kerrallaan: ");
             int luku1 = int.Parse(Console.ReadLine());

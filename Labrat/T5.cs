@@ -10,6 +10,8 @@ namespace Labrat
     {
         public static void Tehtava5()
         {
+            //Tee ohjelma, joka näyttää annetun sekuntimäärän tunteina, minuutteina ja sekunteina. Aikamääre sekuntteina kysytään käyttäjältä.
+
             Console.Write("Syötä sekunnit: ");
             int alkusekunnit = int.Parse(Console.ReadLine());
             int tunnit = alkusekunnit / 3600;
