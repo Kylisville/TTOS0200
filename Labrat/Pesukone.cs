@@ -16,18 +16,18 @@ namespace Labrat
         public string ohjelma { get; set; }
         public int kierrokset { get; set; }
 
-        public void PrintAll()
+        
+
+        public override string ToString()
         {
-            Console.WriteLine("Pesuohjelman lämpötila: {0}", lampotila);
-            Console.WriteLine("Pesuohjelma: {0}", ohjelma);
-            Console.WriteLine("Kierrosmäärä: {0}", kierrokset);
+            return String.Format("Pesukone päällä: {0}\n Lämpötila: {1}\n Ohjelma: {2}\n Kierrokset: {3}\n", paalla, lampotila, ohjelma, kierrokset);
         }
 
     }
     class Pesuohjelma
-        
+
     {
-        
+
         public static void Pesukone()
 
         {
@@ -36,8 +36,9 @@ namespace Labrat
 
             while (looppi == 1)
             {
-
+                Console.Clear();
                 Console.WriteLine("Tervetuloa pesukoneeseen!");
+                Console.WriteLine(valinta.ToString());
                 Console.WriteLine("Paina 1 käynnistääksesi/sammuttaaksesi pesukoneen.");
                 Console.WriteLine("Paina 2 asettaaksesi pesulämpötilan.");
                 Console.WriteLine("Paina 3 valitaksesi pesuohjelman.");
@@ -69,16 +70,11 @@ namespace Labrat
                             {
 
                                 valinta.paalla = true;
-                                Console.WriteLine("Pesukone päällä: {0}", valinta.paalla);
+                               
 
                             }
-                            else if (valinta.paalla == true)
-                            {
-
-                                valinta.paalla = false;
-                                Console.WriteLine("Pesukone päällä: {0}", valinta.paalla);
-
-                            }
+                      
+              
                             break;
                         case 2:
                             if (valinta.paalla == true)
@@ -86,65 +82,66 @@ namespace Labrat
 
                                 Console.WriteLine("Valitse pesulämpötila: 30, 40, 60, 90");
                                 valinta.lampotila = int.Parse(Console.ReadLine());
-                                if (valinta.lampotila == 30)
-                                {
-                                    Console.WriteLine("Pesulämpötilaksi valittu 30 astetta.");
-                                }
-                                else if (valinta.lampotila == 40)
-                                {
-
-                                    Console.WriteLine("Pesulämpötilaksi valittu 40 astetta.");
-
-                                }
-                                else if (valinta.lampotila == 60)
-                                {
-                                    Console.WriteLine("Pesulämpötilaksi valittu 30 astetta.");
-
-                                }
-                                else if (valinta.lampotila == 90)
-                                {
-
-                                    Console.WriteLine("Pesulämpötilaksi valittu 90 astetta.");
-
-                                }
-                                else
-                                {
-
-                                    Console.WriteLine("Haluamaasi lämpötilaa ei ole saatavilla");
-
-                                }
 
                             }
                             else
                             {
-                                Console.WriteLine("Pesukoneen pitää olla ensin päällä!");
-                            }
+                                Console.WriteLine("laita pesukone eka päälle");
 
+                            }
+                  
                             break;
                         case 3:
                             if (valinta.paalla == true)
                             {
 
-                                Console.WriteLine("Valitse pesuohjelma: ", pesuohjelmat);
-                                valinta.ohjelma = (Console.ReadLine());
- 
-                                    }
+                                Console.WriteLine("Valitse pesuohjelma: ");
+                                for (int i = 0; i < pesuohjelmat.Length; i++)
+                                {
+                                    int x = i + 1;
+                                    Console.WriteLine(x + " " + pesuohjelmat[i]);
+                                        
+                                }
+                                int pesuohjelma = int.Parse(Console.ReadLine())-1;
+                                valinta.ohjelma = pesuohjelmat[pesuohjelma];
+                                
+                            }
+
+                            else
+                            {
+
+                                Console.WriteLine("Pesuohjelmaa ei ole listalla!");
+
+                            }
+                            break;
+                        case 4:
+                            if (valinta.paalla == true)
+                            {
+
+                                Console.WriteLine("Anna kierrosmäärä: ");
+                                valinta.kierrokset = int.Parse(Console.ReadLine());
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("Laita pesukone ensin päälle.");
+                            }
                             break;
                     }
-
-                                {
-
-
-                                }
-                            }
-                        
                            
                     }
                     
+
+                }
+
+                    {
+
+
+                    }
                 }
 
 
             }
 
         }
-    
+

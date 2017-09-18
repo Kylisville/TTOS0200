@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Televisio.cs" />
     <Compile Include="Pesukone.cs" />
     <Compile Include="Kiuas.cs" />
     <Compile Include="T17.cs" />
