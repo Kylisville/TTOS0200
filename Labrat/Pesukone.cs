@@ -11,34 +11,44 @@ namespace Labrat
 
     {
 
-        public bool paalla { get; set; }
-        public int lampotila { get; set; }
-        public string ohjelma { get; set; }
-        public int kierrokset { get; set; }
+        public bool paalla;
+        public int lampotila;
+        public string ohjelma;
+        public int kierrokset; 
 
+        public Pesukone()
+        {
+             
+            lampotila = 40;
+            kierrokset = 1400;
+            paalla = false;
+        }
         
-
+        
         public override string ToString()
         {
             return String.Format("Pesukone päällä: {0}\n Lämpötila: {1}\n Ohjelma: {2}\n Kierrokset: {3}\n", paalla, lampotila, ohjelma, kierrokset);
         }
 
     }
+
     class Pesuohjelma
 
+ 
     {
+    
 
         public static void Pesukone()
 
         {
-            Pesukone valinta = new Pesukone();
+            Pesukone electrolux = new Pesukone();
             int looppi = 1;
 
             while (looppi == 1)
             {
                 Console.Clear();
                 Console.WriteLine("Tervetuloa pesukoneeseen!");
-                Console.WriteLine(valinta.ToString());
+                Console.WriteLine(electrolux.ToString());
                 Console.WriteLine("Paina 1 käynnistääksesi/sammuttaaksesi pesukoneen.");
                 Console.WriteLine("Paina 2 asettaaksesi pesulämpötilan.");
                 Console.WriteLine("Paina 3 valitaksesi pesuohjelman.");
@@ -66,22 +76,25 @@ namespace Labrat
                             looppi = 0;
                             break;
                         case 1:
-                            if (valinta.paalla == false)
+                            if (electrolux.paalla == false)
                             {
 
-                                valinta.paalla = true;
-                               
+                                electrolux.paalla = true;
 
                             }
-                      
+                            else
+                            {
+
+                                electrolux.paalla = false;
+                            }
               
                             break;
                         case 2:
-                            if (valinta.paalla == true)
+                            if (electrolux.paalla == true)
                             {
 
                                 Console.WriteLine("Valitse pesulämpötila: 30, 40, 60, 90");
-                                valinta.lampotila = int.Parse(Console.ReadLine());
+                                electrolux.lampotila = int.Parse(Console.ReadLine());
 
                             }
                             else
@@ -92,7 +105,7 @@ namespace Labrat
                   
                             break;
                         case 3:
-                            if (valinta.paalla == true)
+                            if (electrolux.paalla == true)
                             {
 
                                 Console.WriteLine("Valitse pesuohjelma: ");
@@ -103,7 +116,7 @@ namespace Labrat
                                         
                                 }
                                 int pesuohjelma = int.Parse(Console.ReadLine())-1;
-                                valinta.ohjelma = pesuohjelmat[pesuohjelma];
+                                electrolux.ohjelma = pesuohjelmat[pesuohjelma];
                                 
                             }
 
@@ -115,11 +128,11 @@ namespace Labrat
                             }
                             break;
                         case 4:
-                            if (valinta.paalla == true)
+                            if (electrolux.paalla == true)
                             {
 
                                 Console.WriteLine("Anna kierrosmäärä: ");
-                                valinta.kierrokset = int.Parse(Console.ReadLine());
+                                electrolux.kierrokset = int.Parse(Console.ReadLine());
                             }
 
                             else

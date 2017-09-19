@@ -10,10 +10,10 @@ namespace Labrat
 
 
     {
-        //kentät
-        public bool paalla { get; set; }
-        public int lampotila { get; set; }
-        public double kosteus { get; set; }
+       
+        public bool paalla;
+        public int lampotila;
+        public double kosteus; 
        
 
     }

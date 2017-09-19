@@ -28,9 +28,12 @@ namespace Labrat
             //Labrat.harjoitus16.Tehtava16(); 
             //Labrat.harjoitus17.Tehtava17();
             //Labrat.harjoitus18.Tehtava18();
-            //Labrat.Pesuohjelma.Pesukone();
-            Labrat.Telkkariohjelma.telkkari();
-            
+            Labrat.Pesuohjelma.Pesukone();
+            //Labrat.Telkkariohjelma.telkkari();
+            //Labrat.Autoprogram.autoohjelma();
+
+
+                        
             
           
         }

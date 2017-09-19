@@ -10,15 +10,27 @@ namespace Labrat
 
 
     {
-        //kentät
-        public bool paalla { get; set; }
-        public string kanava { get; set; }
-        public string sisaantulo { get; set; }
-        public int aanenvoimakkuus { get; set; }
+       
+        public bool paalla;
+        public string kanava;
+        public string sisaantulo;
+        public int aanenvoimakkuus;
+
+        public Televisio()
+        {
+
+            aanenvoimakkuus = 50;
+            kanava = String.Format("Nelonen");
+            sisaantulo = String.Format("Antenni");
+        }
 
         public override string ToString()
         {
+           
+  
             return String.Format("Televisio päällä: {0}\n Kanava: {1}\n Sisääntulo: {2}\n Äänenvoimakkuus: {3}\n", paalla, kanava, sisaantulo, aanenvoimakkuus);
+            
+            
         }
         public void Lisaanta()
         {
@@ -30,6 +42,7 @@ namespace Labrat
              aanenvoimakkuus -= 1;
 
         }
+    
     }
 
     
@@ -86,7 +99,11 @@ namespace Labrat
                                 samsung.paalla = true;
 
                             }
+                            else
+                            {
+                                samsung.paalla = false;
 
+                            }
 
                             break;
 
@@ -150,7 +167,7 @@ namespace Labrat
                                 
                                 Console.WriteLine("Anna äänenvoimakkuus 0-100: ");
                                 samsung.aanenvoimakkuus = int.Parse(Console.ReadLine());
-                                if (samsung.aanenvoimakkuus < 0 || samsung.aanenvoimakkuus > 100) 
+                                if (samsung.aanenvoimakkuus < 0 || samsung.aanenvoimakkuus > 100)
                                 {
 
                                     Console.WriteLine("Äänenvoimakkuuden pitää olla 0-100");
@@ -160,8 +177,9 @@ namespace Labrat
                                 else
                                 {
 
-                                    return;
-                                   
+                                    Console.WriteLine("Television täytyy olla päällä");
+
+
                                 }
                                
                             }
