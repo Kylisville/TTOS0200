@@ -11,10 +11,10 @@ namespace Labrat
 
     {
 
-        public bool paalla;
-        public int lampotila;
-        public string ohjelma;
-        public int kierrokset; 
+        public bool paalla { get; set; }
+        public int lampotila { get; set; }
+        public string ohjelma { get; set; }
+        public int kierrokset { get; set; }
 
         public Pesukone()
         {

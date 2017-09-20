@@ -11,10 +11,10 @@ namespace Labrat
 
     {
        
-        public bool paalla;
-        public int lampotila;
-        public double kosteus; 
-       
+        public bool paalla { get; set; }
+        public int lampotila { get; set; }
+        public double kosteus { get; set; }
+
 
     }
 

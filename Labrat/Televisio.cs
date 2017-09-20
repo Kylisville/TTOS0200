@@ -11,10 +11,10 @@ namespace Labrat
 
     {
        
-        public bool paalla;
-        public string kanava;
-        public string sisaantulo;
-        public int aanenvoimakkuus;
+        public bool paalla { get; set; }
+        public string kanava { get; set; }
+        public string sisaantulo { get; set; }
+        public int aanenvoimakkuus { get; set; }
 
         public Televisio()
         {
