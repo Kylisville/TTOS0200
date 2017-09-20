@@ -13,6 +13,7 @@ namespace Labrat
 
         public string name { get; set; }
         public int speed { get; set; }
+        public int tyres { get; set; }
 
         public void PrintData()
         {
