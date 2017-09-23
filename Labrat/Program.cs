@@ -30,7 +30,8 @@ namespace Labrat
             //Labrat.harjoitus18.Tehtava18();
             //Labrat.Pesuohjelma.Pesukone();
             //Labrat.Telkkariohjelma.telkkari();
-            Labrat.Autoprogram.autoohjelma();
+            //Labrat.Autoprogram.autoohjelma();
+            Labrat.TestiPeti.Kysy();
 
 
                         

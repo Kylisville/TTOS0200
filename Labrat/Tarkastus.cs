@@ -6,39 +6,68 @@ using System.Threading.Tasks;
 
 namespace Labrat
 {
-    class Tarkastus
+    public class Tarkastus
     {
 
-        private string Syote { get; set; }
-
-
-
-
-        static bool OnkoLuku(string syote)
+        public static bool OnkoPvm(string syote)
         {
+            DateTime temp;
+           if (DateTime.TryParse(syote, out temp))
+            {
 
+                return true;
 
+            }
+
+            else
+            {
+
+                return false;
+            }
 
         }
-        static bool OnkoPvm(string syote)
-
+        public static bool OnkoLuku(string syote)
         {
+            double luku;
+            if (double.TryParse(syote, out luku))
+            {
 
+                Console.WriteLine("oli");
+                return true;
 
+            }
+            else
+            {
 
+                Console.WriteLine("ei ollu");
+                return false;
+
+            }
+        
         }
+
 
     }
-    class TestiPeti
+
+    public class TestiPeti
     {
-        public static void tarkastus()
+        
+        public static void Kysy()
         {
-            Tarkastus testi = new Tarkastus();
+
+            Console.WriteLine("Anna luku: ");
             string syote = Console.ReadLine();
-            int arvo;
-            testi.
+            Tarkastus.OnkoLuku(syote);
+           // Tarkastus.OnkoPvm(syote);
+        }
+        public static void Testaa()
+        {
+        
+
         }
 
 
     }
+
+
 }
