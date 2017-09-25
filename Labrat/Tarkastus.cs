@@ -33,6 +33,27 @@ namespace Labrat
         public static bool OnkoLuku(string syote)
         {
             double luku;
+            if (syote.Contains(" "))
+            {
+                return false;
+
+
+            }
+
+            if (syote[syote.Length-1] == ',' )
+            {
+                Console.WriteLine("pilkku");
+                return false;
+               
+            }
+            if (syote[0] == ',')
+            {
+                Console.WriteLine("pilkku");
+                return false;
+
+            }
+
+
             if (double.TryParse(syote, out luku))
             {
 
@@ -43,7 +64,7 @@ namespace Labrat
             else
             {
 
-                Console.WriteLine("ei ollu luku vittu");
+                Console.WriteLine("ei ollu luku");
                 return false;
 
             }
@@ -59,8 +80,10 @@ namespace Labrat
         public static void Kysy()
         {
             
+            
             Console.WriteLine("Anna luku: ");
             string syote = Console.ReadLine();
+            
             Tarkastus.OnkoLuku(syote);
             Tarkastus.OnkoPvm(syote);
          
