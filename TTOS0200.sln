@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hissi", "Hissi\Hissi.csproj", "{5DFC2675-7000-4FC5-8FE6-622D5CB9CE5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vahvistin", "Vahvistin\Vahvistin.csproj", "{FC2FACA6-89B3-40BD-AAF9-2A9398548196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04", "Lab04.cs\Lab04.csproj", "{9F7FF2D0-E600-448B-8D40-30D745669DB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FC2FACA6-89B3-40BD-AAF9-2A9398548196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC2FACA6-89B3-40BD-AAF9-2A9398548196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC2FACA6-89B3-40BD-AAF9-2A9398548196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7FF2D0-E600-448B-8D40-30D745669DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7FF2D0-E600-448B-8D40-30D745669DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7FF2D0-E600-448B-8D40-30D745669DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7FF2D0-E600-448B-8D40-30D745669DB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
