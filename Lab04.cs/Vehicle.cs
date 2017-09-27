@@ -4,13 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab04.cs
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+
 
     namespace Lab04.cs
     {
@@ -18,27 +12,35 @@ namespace Lab04.cs
         {
             public string Name { get; set; }
             public string Model { get; set; }
-            public int Year { get; set; }
+            public int ModelYear { get; set; }
             public string Color { get; set; }
 
 
-            public override string ToString()
-            {
-                return Name + " " + Profession + " " + Salary;
-            }
-
+     
         }
 
-        public class Boss : Employee
+        public class Bike : Vehicle
         {
-            public string Car { get; set; }
-            public int Bonus { get; set; }
+            public string Gear { get; set; }
+            public string GearType { get; set; }
 
             public override string ToString()
             {
-                return Name + " " + Profession + " " + Salary + " " + Car + " " + Bonus;
+                return "Name:" + Name + " " + "Model:" + Model + " " + "ModelYear: " + ModelYear + " " + "Gear: " + Gear + " " + "GearType: " + GearType;
             }
         }
-    }
+        public class Boat : Vehicle
+        {
+            public string Type { get; set; }
+            public int Seats { get; set; }
+            public override string ToString()
+            {
+                
 
-}
+                    return "Name:" + Name + " " + "Model:" + Model + " " + "ModelYear: " + ModelYear + " " + "Type: " + Type + " " + "Seats: " + Seats;
+
+                }
+            }
+
+        }
+  

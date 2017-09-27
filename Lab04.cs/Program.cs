@@ -30,7 +30,40 @@ namespace Lab04.cs
             yksi.Salary = 9001;
             Console.WriteLine("Employee: ");
             Console.WriteLine(yksi.ToString(), "\n");*/
-
+            Bike eka = new Bike();
+            eka.Name = "Jopo";
+            eka.Model = "Street";
+            eka.ModelYear = 2015;
+            eka.Color = "Pink";
+            eka.GearType = "False";
+            eka.Gear = "Kissa";
+            Console.WriteLine("Bike info");
+            Console.WriteLine(eka.ToString());
+            eka.Name = "tunturi";
+            eka.Model = "StreetPower";
+            eka.ModelYear = 2000;
+            eka.Color = "Green";
+            eka.GearType = "True";
+            eka.Gear = "Shimano";
+            Console.WriteLine("Bike 2 info");
+            Console.WriteLine(eka.ToString());
+            Boat toka = new Boat();
+            toka.Name = "Buster";
+            toka.Model = "XL";
+            toka.ModelYear = 2015;
+            toka.Color = "Black";
+            toka.Seats = 5;
+            toka.Type = "Motorboat";
+            Console.WriteLine("Boat info");
+            Console.WriteLine(toka.ToString());
+            toka.Name = "Yamarin";
+            toka.Model = "kissa";
+            toka.ModelYear = 2015;
+            toka.Color = "White";
+            toka.Seats = 5;
+            toka.Type = "Motorboat";
+            Console.WriteLine("Boat 2 info");
+            Console.WriteLine(toka.ToString());
         }
     }
 }
