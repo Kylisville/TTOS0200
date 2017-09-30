@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab04.cs
+namespace Lab04
 {
     class Program
     {
@@ -29,7 +29,7 @@ namespace Lab04.cs
             yksi.Profession = "Principal teacher";
             yksi.Salary = 9001;
             Console.WriteLine("Employee: ");
-            Console.WriteLine(yksi.ToString(), "\n");*/
+            Console.WriteLine(yksi.ToString(), "\n");
             Bike eka = new Bike();
             eka.Name = "Jopo";
             eka.Model = "Street";
@@ -63,7 +63,141 @@ namespace Lab04.cs
             toka.Seats = 5;
             toka.Type = "Motorboat";
             Console.WriteLine("Boat 2 info");
-            Console.WriteLine(toka.ToString());
+            Console.WriteLine(toka.ToString());*/
+            /*Radio philips = new Radio();
+            int looppi = 1;
+            while (looppi == 1)
+            {
+                Console.WriteLine("Tervetuloa radioon!");
+                
+                Console.WriteLine("Paina 1 käynnistääksesi radion.");
+                Console.WriteLine("Paina 2 asettaaksesi taajuuden (2KHz - 26KHz)");
+                Console.WriteLine("Paina 3 asettaaksesi äänenvoimakkuuden (0-9)");
+                Console.WriteLine("Paina 0 poistuaksesi ohjelmasta.");
+
+                Asetukset asetus = new Asetukset();
+
+                int asetukset = new int();
+                int input = 0;
+                while (input == 0)
+                {
+
+                    string valinta2 = Console.ReadLine();
+                    int valintanro;
+                    bool testi = int.TryParse(valinta2, out valintanro);
+                    if (testi == true && valintanro < 4)
+                    {
+                        asetukset = valintanro;
+                        input++;
+
+
+                    }
+                }
+                Console.Clear();
+                switch (asetukset)
+                {
+                    case 0:
+                        looppi = 0;
+                        break;
+
+                    case 1:
+
+                        if (asetus.paalla == false)
+                        {
+
+                            asetus.paalla = true;
+                            Console.WriteLine("Radio päällä: {0}", asetus.paalla);
+
+                        }
+                        else if (asetus.paalla == true)
+
+                        {
+                            asetus.paalla = false;
+                            Console.WriteLine("Radio päällä: {0}", asetus.paalla);
+                        }
+
+                        break;
+                    case 2:
+                        if (asetus.paalla == true)
+                        {
+                            asetus.Taajuus = int.Parse(Console.ReadLine());
+                        }
+
+                        else
+                        {
+
+                            Console.WriteLine("Radion on oltava päällä!");
+                        }
+                        break;
+
+                    case 3:
+                        asetus.Aani = int.Parse(Console.ReadLine());
+
+                        break;
+
+                }
+            }
+            
+                    case 2:
+
+                        if (asetus.paalla == true)
+                        {
+                            Console.WriteLine("Syötä taajuus:");
+                            philips.Taajuus = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Taajuudeksi asetettu: {0}", philips.Taajuus);
+
+                        }else
+                        {
+
+                            Console.WriteLine("Radion on oltava päällä!");
+                            break;
+                        }
+
+                        break;
+
+                }
+            }
+            
+            */
+            Radio2 mankka = new Radio2();
+
+            
+            { 
+            Console.WriteLine("Tervetuloa radioon.");
+            Console.WriteLine("Paina 1 kytkeäksesi radion päälle");
+            
+            int luku = int.Parse(Console.ReadLine());
+                if (luku == 1)
+                {
+                    mankka.paalla = true;
+                    Console.WriteLine("Radio päällä");
+
+                }
+                else
+                {
+                    Console.WriteLine("Kytke radio päälle painamalla 1");
+                }
+
+                if (mankka.paalla == true)
+                {
+
+                    Console.WriteLine("Syötä taajuus (2KHz-26KHz) ");
+                    mankka.Taajuus = int.Parse(Console.ReadLine());
+
+                }
+                if (mankka.paalla == true)
+                {
+                    Console.WriteLine("Syötä Äänenvoimakkuus (0-9) ");
+
+                    mankka.Aani = int.Parse(Console.ReadLine());
+                    
+                }
+                Console.WriteLine(mankka.ToString());
+
+
+            }
+
+
         }
     }
 }

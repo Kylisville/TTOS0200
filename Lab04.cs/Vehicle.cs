@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 
 
-    namespace Lab04.cs
+    namespace Lab04
     {
         public class Vehicle
         {

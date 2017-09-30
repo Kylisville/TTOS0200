@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab04.cs
+namespace Lab04
 {
     public class Employee
     {
