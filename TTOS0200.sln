@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vahvistin", "Vahvistin\Vahv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04", "Lab04.cs\Lab04.csproj", "{9F7FF2D0-E600-448B-8D40-30D745669DB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demoprojekti1", "Demoprojekti1\Demoprojekti1.csproj", "{6D456D83-0246-4BE5-BB74-CC6070321FA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9F7FF2D0-E600-448B-8D40-30D745669DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F7FF2D0-E600-448B-8D40-30D745669DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F7FF2D0-E600-448B-8D40-30D745669DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D456D83-0246-4BE5-BB74-CC6070321FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D456D83-0246-4BE5-BB74-CC6070321FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D456D83-0246-4BE5-BB74-CC6070321FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D456D83-0246-4BE5-BB74-CC6070321FA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -158,7 +158,7 @@ namespace Lab04
                 }
             }
             
-            */
+            
             Radio2 mankka = new Radio2();
 
 
@@ -206,7 +206,7 @@ namespace Lab04
              Console.WriteLine("Bookcase inventory: ");
              Console.WriteLine(PFloyd.ToString());
              Console.WriteLine(Rambo.ToString());
-             Console.WriteLine(OPO.ToString());
+             Console.WriteLine(OPO.ToString()); */
 
             Music Lemmy = new Music("Motörhead", 5, "Rock and Roll");
             Games Pubg = new Games("Playerunknown's Battlegrounds", 1, " Yes ", "No", "Battle Royale");
@@ -215,7 +215,7 @@ namespace Lab04
             Console.WriteLine(Lemmy.ToString());
             Console.WriteLine(Pubg.ToString());
             Console.WriteLine(Puntti.ToString());
-            */
+            
         }
     }
 }
