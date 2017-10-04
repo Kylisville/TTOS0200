@@ -159,53 +159,54 @@ namespace Lab04
             }
             
             */
-            /* Radio2 mankka = new Radio2();
+            Radio2 mankka = new Radio2();
 
 
-             { 
-             Console.WriteLine("Tervetuloa radioon.");
-             Console.WriteLine("Paina 1 kytkeäksesi radion päälle");
+            {
+                Console.WriteLine("Tervetuloa radioon.");
+                Console.WriteLine("Paina 1 kytkeäksesi radion päälle");
 
-             int luku = int.Parse(Console.ReadLine());
-                 if (luku == 1)
-                 {
-                     mankka.paalla = true;
-                     Console.WriteLine("Radio päällä");
+                int luku = int.Parse(Console.ReadLine());
+                if (luku == 1)
+                {
+                    mankka.Paalla = true;
+                    Console.WriteLine("Radio päällä");
 
-                 }
-                 else
-                 {
-                     Console.WriteLine("Kytke radio päälle painamalla 1");
-                 }
+                }
+                else
+                {
+                    Console.WriteLine("Kytke radio päälle painamalla 1");
+                }
 
-                 if (mankka.paalla == true)
-                 {
+                if (mankka.Paalla == true)
+                {
 
-                     Console.WriteLine("Syötä taajuus (2KHz-26KHz) ");
-                     mankka.Taajuus = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Syötä taajuus (2KHz-26KHz) ");
+                    mankka.Taajuus = int.Parse(Console.ReadLine());
 
-                 }
-                 if (mankka.paalla == true)
-                 {
-                     Console.WriteLine("Syötä Äänenvoimakkuus (0-9) ");
+                }
+                if (mankka.Paalla == true)
+                {
+                    Console.WriteLine("Syötä Äänenvoimakkuus (0-9) ");
 
-                     mankka.Aani = int.Parse(Console.ReadLine());
+                    mankka.Aani = int.Parse(Console.ReadLine());
 
-                 }
-                 Console.WriteLine(mankka.ToString());
-
-
-             }
-             */
+                }
+                Console.WriteLine(mankka.ToString());
 
 
-            /* Cd PFloyd = new Cd("Pink Floyd: The Dark Side of The Moon", 1, 40, 10);
+            }
+
+             /*
+    
+
+             Cd PFloyd = new Cd("Pink Floyd: The Dark Side of The Moon", 1, 40, 10);
              Book Rambo = new Book("Rambo: First Blood", 3, 15, 252);
              Phone OPO = new Phone("OnePlus", 2, 400, "OxygenOS", "OnePlus","3T");
              Console.WriteLine("Bookcase inventory: ");
              Console.WriteLine(PFloyd.ToString());
              Console.WriteLine(Rambo.ToString());
-             Console.WriteLine(OPO.ToString());*/
+             Console.WriteLine(OPO.ToString());
 
             Music Lemmy = new Music("Motörhead", 5, "Rock and Roll");
             Games Pubg = new Games("Playerunknown's Battlegrounds", 1, " Yes ", "No", "Battle Royale");
@@ -214,6 +215,7 @@ namespace Lab04
             Console.WriteLine(Lemmy.ToString());
             Console.WriteLine(Pubg.ToString());
             Console.WriteLine(Puntti.ToString());
+            */
         }
     }
 }

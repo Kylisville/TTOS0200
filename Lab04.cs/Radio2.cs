@@ -8,8 +8,8 @@ namespace Lab04
 {
     public class Radio2
     {
-        public int nappi;
-        public bool paalla { get; set; }
+        
+        public bool Paalla { get; set; }
         private const int maksimitaajuus = 26000;
         private int taajuus;
         public int Taajuus
@@ -44,7 +44,7 @@ namespace Lab04
         }
         public override string ToString()
         {
-            return String.Format(" Radio päällä: {0}\n Taajuus: {1}\n Äänenvoimakkuus: {2}\n", paalla, taajuus, aani);
+            return String.Format(" Radio päällä: {0}\n Taajuus: {1}\n Äänenvoimakkuus: {2}\n", Paalla, taajuus, aani);
         }
 
 
