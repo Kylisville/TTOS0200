@@ -9,7 +9,7 @@ namespace Lab04
     public class Radio
     {
 
-        public bool paalla { get; set; }
+        public bool Paalla { get; set; }
         private const int maksimitaajuus = 26000;
         private int taajuus;
         public int Taajuus
