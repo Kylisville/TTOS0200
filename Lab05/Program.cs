@@ -21,7 +21,7 @@ namespace Lab05
             auto.AddTyre(new Tyres("Bridgestone", "Potenza RE010"));
             auto.AddTyre(new Tyres("Bridgestone", "Potenza RE010"));
             */
-            Fridge Rosenlew = new Fridge();
+            /*Fridge Rosenlew = new Fridge();
             Console.WriteLine(Rosenlew.ToString());
             Rosenlew.OpenDoor();
             Items one = new Items("Beer");
@@ -29,6 +29,12 @@ namespace Lab05
             Rosenlew.AddItem(one);
             Rosenlew.AddItem(two);
             Console.WriteLine(Rosenlew.ToString());
+            */
+            Seura Saipa = new Seura("SaiPa","Lappeenranta\n");       
+            Saipa.Pelaajat.Add(new Pelaaja("Jussi ", "Markkanen ", "Maalivahti ", "Vasen"));
+            Saipa.Pelaajat.Add(new Pelaaja("Cody ", "Kunyk ", "Keskushyökkääjä ", "Vasen"));
+            Saipa.Pelaajat.Add(new Pelaaja("Ahti ", "Oksanen ", "Vasen laitahyökkääjä ", "Vasen"));
+            Console.WriteLine(Saipa.ToString());
         }
     }
 }
