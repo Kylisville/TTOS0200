@@ -34,7 +34,7 @@ namespace Labrat
         }
         public void Lisaanta()
         {
-             aanenvoimakkuus += 1;
+            aanenvoimakkuus += 1;
 
         }
         public void vahemmanaanta()
