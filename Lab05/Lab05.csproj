@@ -44,8 +44,10 @@
   <ItemGroup>
     <Compile Include="Fridge.cs" />
     <Compile Include="Joukkue.cs" />
+    <Compile Include="Mammal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reallife.cs" />
     <Compile Include="Tyres.cs" />
   </ItemGroup>
   <ItemGroup>

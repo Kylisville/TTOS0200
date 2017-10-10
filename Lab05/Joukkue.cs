@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Lab05
 {
@@ -13,7 +14,7 @@ namespace Lab05
         public string Pelipaikka { get; set; }
         public string Katisyys { get; set; }
 
-        public Pelaaja()
+        public Pelaaja(string tiedot)
         {
 
         }
@@ -25,6 +26,7 @@ namespace Lab05
             Katisyys = katisyys;
 
         }
+
         public override string ToString()
         {
             return "Nimi: " + Etunimi + Sukunimi + "Pelipaikka: " + Pelipaikka + "Kätisyys: " + Katisyys;
@@ -41,14 +43,21 @@ namespace Lab05
             Kaupunki = kaupunki;
             Pelaajat = new List<Pelaaja>();
         }
+        public void Tiedostoon()
+        {
+            string s = "";
+            foreach (Pelaaja p in Pelaajat)
+            {
+                s += p.ToString() + "\n";
+
+            }
+            File.WriteAllText("E:/Users/asd.txt", s);
+        }
+
         public Seura()
         {
 
         }
-        /*  public override string ToString()
-          {
-              return String.Format("Joukkue: {0} Kaupunki: {1}", Nimi, Kaupunki);
-         }*/
 
         public override string ToString()
         {
@@ -57,10 +66,10 @@ namespace Lab05
             {
                 retval += item.ToString() + "\n";
 
-                
+
             }
             return retval;
         }
-
+       
     }
 }
