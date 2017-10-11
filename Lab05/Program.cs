@@ -22,7 +22,7 @@ namespace Lab05
             auto.AddTyre(new Tyres("Bridgestone", "Potenza RE010"));
             auto.AddTyre(new Tyres("Bridgestone", "Potenza RE010"));
             */
-         /*Fridge Rosenlew = new Fridge();
+      /*   Fridge Rosenlew = new Fridge();
          Console.WriteLine(Rosenlew.ToString());
          Rosenlew.OpenDoor();
          Items one = new Items("Beer");
@@ -31,17 +31,17 @@ namespace Lab05
          Rosenlew.AddItem(two);
          Console.WriteLine(Rosenlew.ToString());
          */
-         /*
-            StreamReader tiedot = new StreamReader("E:/Users/kissa.txt");
-            
-         Seura Saipa = new Seura("SaiPa","Lappeenranta\n");
+            /*
+               StreamReader tiedot = new StreamReader("E:/Users/kissa.txt");
 
-            Saipa.Pelaajat.Add(new Pelaaja("Jussi ", "Markkanen ", "Maalivahti ", "Vasen"));
-             Saipa.Pelaajat.Add(new Pelaaja("Cody ", "Kunyk ", "Keskushyökkääjä ", "Vasen"));
-             Saipa.Pelaajat.Add(new Pelaaja("Ahti ", "Oksanen ", "Vasen laitahyökkääjä ", "Vasen"));
-            Console.WriteLine(Saipa.ToString());
-            Saipa.Tiedostoon();
-            */
+            Seura Saipa = new Seura("SaiPa","Lappeenranta\n");
+
+               Saipa.Pelaajat.Add(new Pelaaja("Jussi ", "Markkanen ", "Maalivahti ", "Vasen"));
+                Saipa.Pelaajat.Add(new Pelaaja("Cody ", "Kunyk ", "Keskushyökkääjä ", "Vasen"));
+                Saipa.Pelaajat.Add(new Pelaaja("Ahti ", "Oksanen ", "Vasen laitahyökkääjä ", "Vasen"));
+               Console.WriteLine(Saipa.ToString());
+               Saipa.Tiedostoon();
+               */
 
             /*
               Aikuinen Ville = new Aikuinen("Ville", 22, 90, 182, "Volvo");
@@ -55,14 +55,14 @@ namespace Lab05
               Console.WriteLine(Ville.ToString());
               Console.WriteLine(Baby.ToString());
               */
-            Person Henkilo = new Person("Ville");
-            
-            Wallet Lompakko = new Wallet("Leather wallet", 50, "VISA, S-Etukortti");
-            Console.WriteLine(Henkilo.ToString());
-            Console.WriteLine(Lompakko.ToString());
-            Lompakko.AddMoney();
-             Lompakko.Contents.Add(new Wallet("Kors", 200, "Driving License"));
-            Console.WriteLine(Lompakko.ToString());
+             Person Henkilo = new Person("Ville");
+
+             Wallet Lompakko = new Wallet("Leather wallet", 50, "VISA, S-Etukortti");
+             Console.WriteLine(Henkilo.ToString());
+             Console.WriteLine(Lompakko.ToString());
+             Lompakko.AddMoney();
+              Henkilo.Contents.Add(new Wallet("Kors", 200, "Driving License"));
+             Console.WriteLine(Lompakko.ToString());
             
 
 

@@ -11,14 +11,14 @@ namespace Lab05
         public string Type { get; set; }
         public int GotMoney { get; set; }
         public string Cards { get; set; }
-        public List<Wallet> Contents;
+        
         public Wallet(string type, int gotmoney, string cards)
         {
             Cards = cards;
             GotMoney = gotmoney;
             Type = type;
             
-            Contents = new List<Wallet>();
+            
         }
         public void AddMoney()
         {
@@ -35,14 +35,17 @@ namespace Lab05
      public class Person
     {
        public string Name { get; set; }
+        public List<Wallet> Contents;
         public Person(string name)
         {
+            Contents = new List<Wallet>();
             Name = name;
         }
         public override string ToString()
         {
             return String.Format("Name: {0}",Name);
         }
+       
 
     }
 }
