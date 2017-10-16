@@ -8,6 +8,7 @@ namespace JAMK_IT.MiniASIO
 {
     class TestaaMiniASIO
     {
+        /*
         static void Testaa()
         {
             //luodaan List-tyyppinen lista opiskelijoista
@@ -84,5 +85,36 @@ namespace JAMK_IT.MiniASIO
         {
             Testaa();
         }
+    }*/
+        /*static void ListAlbum()
+        {
+            CD album = new CD("The Dark Side of the Moon", "Pink Floyd");
+            album.AddTrack(new Track("Breathe", "2:43"));
+            album.AddTrack(new Track("On the Run", "3:30"));
+            album.AddTrack(new Track("Time", "6:53"));
+            album.AddTrack(new Track("The Great Gig in the Sky", "4:15"));
+            album.AddTrack(new Track("Money", "6:30"));
+            album.AddTrack(new Track("Us and Them", "7:51"));
+            album.AddTrack(new Track("Any Colour You Like", "3:24"));
+            album.AddTrack(new Track("Brain Damage", "3:50"));
+            album.AddTrack(new Track("Eclipse", "2:03"));
+
+            Console.WriteLine(album.ToString());
+        }
+        static void Main(string[] args)
+        {
+            ListAlbum();
+        }
+        */
+        static void Main(string[] args)
+        {
+            // Deck CardDeck = new Deck();
+            // CardDeck.CreateDeck(13);
+            //  CardDeck.ShowDeck();
+        }
+
+        private static Random rng = new Random();
+       
     }
 }
+
