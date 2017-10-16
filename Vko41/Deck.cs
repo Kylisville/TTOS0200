@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace JAMK_IT.MiniASIO
 {
-    class Deck
+    public class Deck
     {
-        public List<Card> cards;
+        List<Card> cards;
         public Deck()
         {
             cards = new List<Card>();
@@ -33,17 +34,8 @@ namespace JAMK_IT.MiniASIO
                 x++;
             }
         }
-        static void Shuffle<T>(List<T> list)
-        {
-            for (int i = 0; i < list.Count; i++)
-            {
-                int idx = rng.Next(i, list.Count);
-                T temp = list[idx];
-                list[idx] = list[i];
-                list[i] = temp;
-            }
 
-        }
+       
 
     }
     abstract class Card
@@ -73,6 +65,7 @@ namespace JAMK_IT.MiniASIO
 
 
     }
+  
     class Heart:Card
     {
         public override string House
@@ -101,7 +94,8 @@ namespace JAMK_IT.MiniASIO
             get { return "Diamond"; }
         }
     }
-
+   
+   
 
 }
 

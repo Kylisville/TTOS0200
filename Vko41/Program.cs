@@ -108,13 +108,29 @@ namespace JAMK_IT.MiniASIO
         */
         static void Main(string[] args)
         {
-            // Deck CardDeck = new Deck();
-            // CardDeck.CreateDeck(13);
-            //  CardDeck.ShowDeck();
+            Deck CardDeck = new Deck();
+            CardDeck.CreateDeck(13);
+            CardDeck.ShowDeck();
+            new Random().Shuffle(CardDeck);
+            
+
         }
 
-        private static Random rng = new Random();
-       
+        /* public static Random rng = new Random();
+         public static void Shuffle<Deck>(List<Deck> list)
+         {
+
+
+             for (int i = 0; i < list.Count; i++)
+             {
+                 int idx = rng.Next(i, list.Count);
+                 Deck temp = list[idx];
+                 list[idx] = list[i];
+                 list[i] = temp;
+             }
+
+         }*/
+
+
     }
 }
-
