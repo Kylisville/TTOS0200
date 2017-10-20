@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 
 namespace JAMK_IT.MiniASIO
 {
-    public class Deck
+     class Deck
     {
-        List<Card> cards;
+        public List<Card> cards;
         public Deck()
         {
             cards = new List<Card>();
         }
+       
         public void CreateDeck(int cardhouses)
         {
-            for (int x=0; x<cardhouses; x++)
+            for (int x = 0; x < cardhouses; x++)
             {
                 cards.Add(new Heart { CardValue = (x + 1) });
                 cards.Add(new Club { CardValue = (x + 1) });
@@ -35,7 +36,23 @@ namespace JAMK_IT.MiniASIO
             }
         }
 
-       
+        public List<Card> Shuffle()
+        {
+            int t = cards.Count;
+            Random random = new Random();
+            while (t > 1)
+            {
+                int s = random.Next(0, t);
+                t--;
+                Card value = cards[s];
+                cards[s] = cards[t];
+                cards[t] = value;
+            }
+            return cards;
+        }
+
+         
+
 
     }
     abstract class Card
@@ -51,7 +68,7 @@ namespace JAMK_IT.MiniASIO
                 {
                     cardvalue = value;
                 }
-                else if(value%13 == 0)
+                else if (value % 13 == 0)
                 {
                     cardvalue = 13;
                 }
@@ -65,8 +82,8 @@ namespace JAMK_IT.MiniASIO
 
 
     }
-  
-    class Heart:Card
+
+    class Heart : Card
     {
         public override string House
         {
@@ -94,8 +111,10 @@ namespace JAMK_IT.MiniASIO
             get { return "Diamond"; }
         }
     }
-   
-   
+
+    
+
+
 
 }
 
