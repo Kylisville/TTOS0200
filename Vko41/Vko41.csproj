@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="CD.cs" />
     <Compile Include="Deck.cs" />
+    <Compile Include="Saipa.cs" />
     <Compile Include="Opiskelija.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

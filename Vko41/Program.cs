@@ -107,6 +107,7 @@ namespace JAMK_IT.MiniASIO
             ListAlbum();
         }
         */
+        /*
           static void Main(string[] args)
          {
              Deck CardDeck = new Deck();
@@ -122,7 +123,35 @@ namespace JAMK_IT.MiniASIO
 
 
         }
-
+        */
+        static void Main(string[] args)
+        {
+            Joukkue saipa = new Joukkue("SaiPa","Lappeenranta");
+            Console.WriteLine(saipa.ToString());
+            List<Pelaaja> pelaajat = new List<Pelaaja>();
+            pelaajat.Add(new Pelaaja() { Etunimi = "Frans", Sukunimi = "Tuohimaa", Kätisyys = "Vasen", Numero = 35 });
+            pelaajat.Add(new Pelaaja() { Etunimi = "Brett", Sukunimi = "Carson", Kätisyys = "Oikea", Numero = 22 });
+            pelaajat.Add(new Pelaaja() { Etunimi = "Urho", Sukunimi = "Vaakanainen", Kätisyys = "Vasen", Numero = 7 });
+            pelaajat.Add(new Pelaaja() { Etunimi = "Ville", Sukunimi = "Koho", Kätisyys = "Vasen", Numero = 8 });
+            pelaajat.Add(new Pelaaja() { Etunimi = "Cody", Sukunimi = "Kunyk", Kätisyys = "Vasen", Numero = 19 });
+            pelaajat.Add(new Pelaaja() { Etunimi = "Topi", Sukunimi = "Nättinen", Kätisyys = "Vasen", Numero = 59 });
+            foreach(Pelaaja p in pelaajat)
+            {
+                Console.WriteLine(p);
+            }
+            pelaajat.Insert(6, new Pelaaja() { Etunimi = "Jussi", Sukunimi = "Markkanen", Kätisyys = "Vasen", Numero = 27 });
+            Console.WriteLine("\nLisätty pelaaja:\n");
+            foreach (Pelaaja p in pelaajat)
+            {
+                Console.WriteLine(p);
+            }
+            pelaajat.Remove(new Pelaaja() { Etunimi = "Jussi", Sukunimi = "Markkanen", Kätisyys = "Vasen", Numero = 27 });
+            Console.WriteLine("\nPoistettu pelaaja:\n");
+            foreach (Pelaaja p in pelaajat)
+            {
+                Console.WriteLine(p);
+            }
+        }
          
 
 
