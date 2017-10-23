@@ -129,12 +129,12 @@ namespace JAMK_IT.MiniASIO
             Joukkue saipa = new Joukkue("SaiPa","Lappeenranta");
             Console.WriteLine(saipa.ToString());
             List<Pelaaja> pelaajat = new List<Pelaaja>();
-            pelaajat.Add(new Pelaaja() { Etunimi = "Frans", Sukunimi = "Tuohimaa", Kätisyys = "Vasen", Numero = 35 });
-            pelaajat.Add(new Pelaaja() { Etunimi = "Brett", Sukunimi = "Carson", Kätisyys = "Oikea", Numero = 22 });
-            pelaajat.Add(new Pelaaja() { Etunimi = "Urho", Sukunimi = "Vaakanainen", Kätisyys = "Vasen", Numero = 7 });
-            pelaajat.Add(new Pelaaja() { Etunimi = "Ville", Sukunimi = "Koho", Kätisyys = "Vasen", Numero = 8 });
-            pelaajat.Add(new Pelaaja() { Etunimi = "Cody", Sukunimi = "Kunyk", Kätisyys = "Vasen", Numero = 19 });
-            pelaajat.Add(new Pelaaja() { Etunimi = "Topi", Sukunimi = "Nättinen", Kätisyys = "Vasen", Numero = 59 });
+            pelaajat.Insert(0, new Pelaaja() { Etunimi = "Frans", Sukunimi = "Tuohimaa", Kätisyys = "Vasen", Numero = 35 });
+            pelaajat.Insert(1, new Pelaaja() { Etunimi = "Brett", Sukunimi = "Carson", Kätisyys = "Oikea", Numero = 22 });
+            pelaajat.Insert(2, new Pelaaja() { Etunimi = "Urho", Sukunimi = "Vaakanainen", Kätisyys = "Vasen", Numero = 7 });
+            pelaajat.Insert(3, new Pelaaja() { Etunimi = "Ville", Sukunimi = "Koho", Kätisyys = "Vasen", Numero = 8 });
+            pelaajat.Insert(4, new Pelaaja() { Etunimi = "Cody", Sukunimi = "Kunyk", Kätisyys = "Vasen", Numero = 19 });
+            pelaajat.Insert(5, new Pelaaja() { Etunimi = "Topi", Sukunimi = "Nättinen", Kätisyys = "Vasen", Numero = 59 });
             foreach(Pelaaja p in pelaajat)
             {
                 Console.WriteLine(p);
@@ -145,7 +145,8 @@ namespace JAMK_IT.MiniASIO
             {
                 Console.WriteLine(p);
             }
-            pelaajat.Remove(new Pelaaja() { Etunimi = "Jussi", Sukunimi = "Markkanen", Kätisyys = "Vasen", Numero = 27 });
+            // pelaajat.Remove(new Pelaaja() { Etunimi = "Jussi", Sukunimi = "Markkanen", Kätisyys = "Vasen", Numero = 27 });
+            pelaajat.RemoveAt(6);
             Console.WriteLine("\nPoistettu pelaaja:\n");
             foreach (Pelaaja p in pelaajat)
             {
