@@ -47,14 +47,11 @@ namespace Vko43
             /*   People nimet = new People();
                nimet.LaskeRivit();
                nimet.LaskeNimet(); */
-            /*     Numbers numbers = new Numbers();
+                 Numbers numbers = new Numbers();
                  numbers.Inputs(); 
                  numbers.AddToTxt();
-                 numbers.ReadTxt();*/
-            IO Test = new IO();
-            Test.InputNumbers();
-            Test.AddNumbersToTxt();
-            Test.ReadTxtFiles();
+                 numbers.ReadTxt();
+ 
 
         }
     }
