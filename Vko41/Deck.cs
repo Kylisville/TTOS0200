@@ -9,7 +9,7 @@ namespace JAMK_IT.MiniASIO
 {
      class Deck
     {
-        public List<Card> cards;
+        public List<Card> cards { get; set; }
         public Deck()
         {
             cards = new List<Card>();

@@ -107,7 +107,7 @@ namespace JAMK_IT.MiniASIO
             ListAlbum();
         }
         */
-        /*
+        
           static void Main(string[] args)
          {
              Deck CardDeck = new Deck();
@@ -123,8 +123,8 @@ namespace JAMK_IT.MiniASIO
 
 
         }
-        */
-        static void Main(string[] args)
+        
+      /*  static void Main(string[] args)
         {
             Joukkue saipa = new Joukkue("SaiPa","Lappeenranta");
             Console.WriteLine(saipa.ToString());
@@ -154,7 +154,7 @@ namespace JAMK_IT.MiniASIO
             }
         }
          
-
+    */
 
     }
 }
