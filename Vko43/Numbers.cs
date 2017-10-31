@@ -11,8 +11,8 @@ namespace Vko43
     {
         public List<int> Int { get; set; }
         public List<double> Double { get; set; }
-        private string pathint = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\int.txt";
-        private string pathdouble = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\double.txt";
+        private string pathint = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\intTxt.txt";
+        private string pathdouble = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\doubleTxt.txt";
         public Numbers()
         {
             Int = new List<int>();
@@ -24,9 +24,8 @@ namespace Vko43
             bool Inputcorrect = true;
             while (Inputcorrect)
             {
-                double input;
                 Console.WriteLine("Syötä kokonais- tai desimaaliluku. Jos syöttö on jotain muuta, ohjelma suljetaan");
-                if(double.TryParse(Console.ReadLine(), out input))
+                if (double.TryParse(Console.ReadLine(), out double input))
                 {
                     if ((input % 1) == 0)
                     {
@@ -54,13 +53,15 @@ namespace Vko43
                     {
                         sw.WriteLine(i);
                     }
+                    Console.WriteLine("Lisätty kokonaisluvut {0}", pathint);
                 };
                 using (StreamWriter sw = File.AppendText(pathdouble))
                 {
-                    foreach (int d in Int)
+                    foreach (double d in Double)
                     {
                         sw.WriteLine(d);
                     }
+                    Console.WriteLine("Lisätty desimaaliluvut {0}", pathdouble);
                 };
 
             }
