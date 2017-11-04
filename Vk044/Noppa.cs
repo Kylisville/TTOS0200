@@ -13,12 +13,14 @@ namespace Vko44
         public Random rand = new Random();
         public void Throw (int amount)
         {
+            
             for (int x = 0; x < amount; x++)
             {
                 Value = rand.Next(1, 7);
                 Throws.Add(Value);
             }
         }
+     
         public void Print()
         {
             foreach (int i in Throws)

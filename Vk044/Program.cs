@@ -87,9 +87,35 @@ namespace Vko44
              {
                  Console.WriteLine(ex.Message);
              }*/
-            Noppa noppa = new Noppa();
-            noppa.Throw(1);
-            noppa.Print();
+            /*    Noppa noppa = new Noppa();
+                Console.WriteLine("How many times you want to throw a dice?: ");
+                int throwamount = int.Parse(Console.ReadLine());
+                noppa.Throw(throwamount);
+                noppa.Print();
+                Console.WriteLine("Average: " + noppa.Throws.Average());
+                for (int x = 1; x < 7; x++)
+                {
+                    int count = 0;
+                    foreach (int i in noppa.Throws)
+                    {
+                        if ( i == x )
+                        {
+                            count++;
+                        }
+                    }
+                    Console.WriteLine("{0} count is: {1}", x, count); 
+
+
+                }*/
+            List<Product> Shoppingcart = new List<Product>();
+            Shoppingcart.Add(new Product("Milk", 1.4));
+            Shoppingcart.Add(new Product("Yoghurt", 0.8));
+            Shoppingcart.Add(new Product("Juice", 2.5));
+            Console.WriteLine("All products in collection: ");
+            foreach(Product p in Shoppingcart)
+            {
+                Console.WriteLine("-product: {0} {1}e",p.Name,p.Price);
+            }
         }
     }
 }
