@@ -107,15 +107,28 @@ namespace Vko44
 
 
                 }*/
-            List<Product> Shoppingcart = new List<Product>();
-            Shoppingcart.Add(new Product("Milk", 1.4));
-            Shoppingcart.Add(new Product("Yoghurt", 0.8));
-            Shoppingcart.Add(new Product("Juice", 2.5));
-            Console.WriteLine("All products in collection: ");
-            foreach(Product p in Shoppingcart)
+            /*  List<Product> Shoppingcart = new List<Product>();
+              Shoppingcart.Add(new Product("Milk", 1.4));
+              Shoppingcart.Add(new Product("Yoghurt", 0.8));
+              Shoppingcart.Add(new Product("Juice", 2.5));
+              Console.WriteLine("All products in collection: ");
+              foreach(Product p in Shoppingcart)
+              {
+                  Console.WriteLine("-product: {0} {1}e",p.Name,p.Price);
+              }
+              */
+            List<Fisher> Registry = new List<Fisher>();
+            Registry.Add(new Fisher("Kirsi Kernel", "020-12345678"));
+            Registry[0].Catch.Add(new Fish("Barracuda", 200, 50,"Jyväsjärvi"));
+            foreach (Fisher f in Registry)
             {
-                Console.WriteLine("-product: {0} {1}e",p.Name,p.Price);
+                Console.WriteLine("Fisherman: {0} Phone: {1}", f.Name, f.PhoneNumber);
+                foreach (Fish r in f.Catch)
+                {
+                    Console.WriteLine("-specie: {0}\n-length(cm): {1}\n-weight(kg): {2}\n-location: {3}",r.Species,r.Length,r.Weight,r.Location);
+                }
             }
+
         }
     }
 }
