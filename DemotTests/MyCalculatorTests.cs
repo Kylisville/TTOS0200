@@ -56,7 +56,7 @@ namespace Demot.Tests
             int jako = laskin.Divide(i, j);
             //Assert
             DivideByZeroException dbze = new DivideByZeroException();
-            Assert.ThrowsException<>
+            Assert.ThrowsException<>;
             Assert.AreEqual(odotettu, jako);
         }
     }

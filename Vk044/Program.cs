@@ -117,18 +117,70 @@ namespace Vko44
                   Console.WriteLine("-product: {0} {1}e",p.Name,p.Price);
               }
               */
-            List<Fisher> Registry = new List<Fisher>();
-            Registry.Add(new Fisher("Kirsi Kernel", "020-12345678"));
-            Registry[0].Catch.Add(new Fish("Barracuda", 200, 50,"Jyväsjärvi"));
-            foreach (Fisher f in Registry)
-            {
-                Console.WriteLine("Fisherman: {0} Phone: {1}", f.Name, f.PhoneNumber);
-                foreach (Fish r in f.Catch)
+            /*    try
                 {
-                    Console.WriteLine("-specie: {0}\n-length(cm): {1}\n-weight(kg): {2}\n-location: {3}",r.Species,r.Length,r.Weight,r.Location);
+                    List<Fisher> Registry = new List<Fisher>();
+                    Registry.Add(new Fisher("Kirsi Kernel", "020-12345678"));
+                    Registry.Add(new Fisher("Ville Kalamies", "020-87654321"));
+                    Registry[0].Catch.Add(new Fish("Barracuda", 200, 50, "Jyväsjärvi"));
+                    Registry[0].Catch.Add(new Fish("Whale", 1000, 5000, "Lake Saimaa"));
+                    Registry[1].Catch.Add(new Fish("Pike", 100, 5, "Päijänne"));
+                    Registry[1].Catch.Add(new Fish("Monni", 1000, 500, "Ahvenlampi"));
+
+                    foreach (Fisher f in Registry)
+                    {
+                        Console.WriteLine("Fisherman: {0} Phone: {1}", f.Name, f.PhoneNumber);
+                        f.Catch.Sort((x, y) => y.Weight.CompareTo(x.Weight));
+                        foreach (Fish r in f.Catch)
+                        {
+
+                            Console.WriteLine("-specie: {0}\n-length(cm): {1}\n-weight(kg): {2}\n-location: {3}", r.Species, r.Length, r.Weight, r.Location);
+
+                        }
+                    }
+
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+
+                }*/
+          /*  try
+            {
+                List<Shape> shape = new List<Shape>();
+                shape.Add(new Circle(1));
+                shape.Add(new Circle(2));
+                shape.Add(new Circle(3));
+                shape.Add(new Rectangle(10, 20));
+                shape.Add(new Rectangle(20, 30));
+                shape.Add(new Rectangle(40, 50));
+                foreach (var t in shape)
+                {
+                    Console.WriteLine(t);
                 }
             }
-
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+               */
+            try
+            {
+                double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };
+                Console.WriteLine("Sum = {0:00.00}", ArrayCalcs.Sum(array));
+                Console.WriteLine("Avg = {0:00.00}", ArrayCalcs.Average(array));
+                Console.WriteLine("Min = {0:00.00}", ArrayCalcs.Min(array));
+                Console.WriteLine("Max = {0:00.00}", ArrayCalcs.Max(array));
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
+	
+	
+	
     }
 }
+ 

@@ -8,19 +8,21 @@ namespace Vko44
 {
     class Noppa
     {
+        
+        
         public int Value { get; set; }
         public List<int> Throws = new List<int>();
         public Random rand = new Random();
-        public void Throw (int amount)
+        public void Throw(int amount)
         {
-            
+
             for (int x = 0; x < amount; x++)
             {
                 Value = rand.Next(1, 7);
                 Throws.Add(Value);
             }
         }
-     
+
         public void Print()
         {
             foreach (int i in Throws)
@@ -28,5 +30,6 @@ namespace Vko44
                 Console.WriteLine(i);
             }
         }
+    
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demot", "Demot\Demot.csproj", "{73A9261C-B666-4821-941C-D88F10569112}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemotTests", "DemotTests\DemotTests.csproj", "{4BBC920B-A8E3-4534-B0C5-A4A3D2259894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko44Tests", "Vko44Tests\Vko44Tests.csproj", "{569E44CD-F2A5-464C-B6AF-8904E1900B2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{4BBC920B-A8E3-4534-B0C5-A4A3D2259894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BBC920B-A8E3-4534-B0C5-A4A3D2259894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BBC920B-A8E3-4534-B0C5-A4A3D2259894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569E44CD-F2A5-464C-B6AF-8904E1900B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569E44CD-F2A5-464C-B6AF-8904E1900B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569E44CD-F2A5-464C-B6AF-8904E1900B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569E44CD-F2A5-464C-B6AF-8904E1900B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

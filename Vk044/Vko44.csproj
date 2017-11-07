@@ -7,7 +7,7 @@
     <ProjectGuid>{F358AB09-2A32-4138-9678-C6E003EA68EE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Vk044</RootNamespace>
-    <AssemblyName>Vk044</AssemblyName>
+    <AssemblyName>Vko44</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayCalcs.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Fish.cs" />
     <Compile Include="Noppa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
