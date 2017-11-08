@@ -1,0 +1,19 @@
+﻿<Window x:Class="CurrencyConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyConverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label Content="Syötä summa" HorizontalAlignment="Left" Margin="95,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tästä" HorizontalAlignment="Left" Margin="130,165,0,0" VerticalAlignment="Top" Width="41" />
+        <Label Content="Tähän" HorizontalAlignment="Left" Margin="130,211,0,0" VerticalAlignment="Top"/>
+        <Button Content="Muunna" HorizontalAlignment="Left" Margin="301,113,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="27" Margin="171,113,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="171,165,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="171,211,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
