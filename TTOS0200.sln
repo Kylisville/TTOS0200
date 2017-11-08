@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko44Tests", "Vko44Tests\Vk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemo", "WPFDemo\WPFDemo.csproj", "{D0002616-5F16-4197-8A2C-AD57C4490CD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko45", "Vko45\Vko45.csproj", "{9A567FEB-23C9-4F2E-A1F8-696C9F218F11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{D0002616-5F16-4197-8A2C-AD57C4490CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0002616-5F16-4197-8A2C-AD57C4490CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0002616-5F16-4197-8A2C-AD57C4490CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A567FEB-23C9-4F2E-A1F8-696C9F218F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A567FEB-23C9-4F2E-A1F8-696C9F218F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A567FEB-23C9-4F2E-A1F8-696C9F218F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A567FEB-23C9-4F2E-A1F8-696C9F218F11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
