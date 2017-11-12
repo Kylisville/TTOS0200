@@ -5,15 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CurrencyConverter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Label Content="Syötä summa" HorizontalAlignment="Left" Margin="95,113,0,0" VerticalAlignment="Top"/>
-        <Label Content="Tästä" HorizontalAlignment="Left" Margin="130,165,0,0" VerticalAlignment="Top" Width="41" />
-        <Label Content="Tähän" HorizontalAlignment="Left" Margin="130,211,0,0" VerticalAlignment="Top"/>
-        <Button Content="Muunna" HorizontalAlignment="Left" Margin="301,113,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="171,113,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="171,165,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="171,211,0,0" VerticalAlignment="Top" Width="120"/>
+        Title="MainWindow" Height="486.27" Width="525">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Label Content="Enter Amount" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
+        <Label Content="From" HorizontalAlignment="Left" Margin="44,108,0,0" VerticalAlignment="Top" Width="41" />
+        <Label Content="To" HorizontalAlignment="Left" Margin="51,143,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Convert" Content="Convert" HorizontalAlignment="Left" Margin="216,70,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="Convert_Click"/>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="27" Margin="90,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="Combo1" HorizontalAlignment="Left" Margin="90,112,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem Content="Euro"/>
+            <ComboBoxItem Content="Dollar"/>
+        </ComboBox>
+        <ComboBox x:Name="Combo2" HorizontalAlignment="Left" Margin="90,147,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem Content="Euro"/>
+            <ComboBoxItem Content="Dollar"/>
+        </ComboBox>
+        <TextBlock x:Name="ConvertedAmount" HorizontalAlignment="Left" Margin="69,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="141" TextAlignment="Center"/>
+        <TextBlock x:Name="ErrorBox" HorizontalAlignment="Left" Margin="90,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="120"/>
 
     </Grid>
 </Window>
