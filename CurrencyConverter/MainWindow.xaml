@@ -7,21 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="486.27" Width="525">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Label Content="Enter Amount" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
-        <Label Content="From" HorizontalAlignment="Left" Margin="44,108,0,0" VerticalAlignment="Top" Width="41" />
-        <Label Content="To" HorizontalAlignment="Left" Margin="51,143,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Convert" Content="Convert" HorizontalAlignment="Left" Margin="216,70,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="Convert_Click"/>
-        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="27" Margin="90,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="Combo1" HorizontalAlignment="Left" Margin="90,112,0,0" VerticalAlignment="Top" Width="120" >
+        <Label Content="Enter Amount" HorizontalAlignment="Left" Margin="-45,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="From" HorizontalAlignment="Left" Margin="-11,64,0,0" VerticalAlignment="Top" Width="41" />
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Height="27" Margin="35,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Amount_TextChanged"/>
+        <ComboBox x:Name="Combo1" HorizontalAlignment="Left" Margin="35,68,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" SelectionChanged="Combo1_SelectedIndexChanged"  >
             <ComboBoxItem Content="Euro"/>
             <ComboBoxItem Content="Dollar"/>
         </ComboBox>
-        <ComboBox x:Name="Combo2" HorizontalAlignment="Left" Margin="90,147,0,0" VerticalAlignment="Top" Width="120" >
+        <TextBlock x:Name="ConvertedAmount" HorizontalAlignment="Left" Margin="14,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="141" TextAlignment="Center"/>
+        <TextBlock x:Name="ErrorBox" HorizontalAlignment="Left" Margin="35,-23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="120"/>
+        <ComboBox x:Name="Combo2" HorizontalAlignment="Left" Margin="35,107,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="1" SelectionChanged="Combo2_SelectedIndexChanged" >
             <ComboBoxItem Content="Euro"/>
             <ComboBoxItem Content="Dollar"/>
         </ComboBox>
-        <TextBlock x:Name="ConvertedAmount" HorizontalAlignment="Left" Margin="69,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="141" TextAlignment="Center"/>
-        <TextBlock x:Name="ErrorBox" HorizontalAlignment="Left" Margin="90,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="120"/>
+        <Label Content="To" HorizontalAlignment="Left" Margin="0,103,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

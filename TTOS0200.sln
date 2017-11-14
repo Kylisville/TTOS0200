@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -36,6 +36,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko45", "Vko45\Vko45.csproj", "{9A567FEB-23C9-4F2E-A1F8-696C9F218F11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter", "CurrencyConverter\CurrencyConverter.csproj", "{602D90F4-8992-4392-884E-2869EA5B1FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Window", "WpfApp1\Window.csproj", "{C5321243-958B-4159-8432-EB0A217E6A2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{602D90F4-8992-4392-884E-2869EA5B1FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{602D90F4-8992-4392-884E-2869EA5B1FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{602D90F4-8992-4392-884E-2869EA5B1FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5321243-958B-4159-8432-EB0A217E6A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5321243-958B-4159-8432-EB0A217E6A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5321243-958B-4159-8432-EB0A217E6A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5321243-958B-4159-8432-EB0A217E6A2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,35 +23,66 @@ namespace CurrencyConverter
         public MainWindow()
         {
             InitializeComponent();
+            Combo1.SelectionChanged += new SelectionChangedEventHandler(Combo1_SelectedIndexChanged);
+            Combo2.SelectionChanged += new SelectionChangedEventHandler(Combo2_SelectedIndexChanged);
         }
-        private void Convert_Click(object sender, RoutedEventArgs e)
+        
+        
+       
+           
+
+
+        private void Amount_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Conversion();
+            
+        }
+
+        
+    
+        private void Conversion()
         {
             //tarkastetaan onko syöttö luku
-            bool check = double.TryParse(Amount.Text, out double d);
-            if (!check)
-                {
-                ErrorBox.Text = "Invalid input. Please enter numbers only.";
-                return;
-                }
-            ErrorBox.Text = String.Empty;
+                 bool check = double.TryParse(Amount.Text, out double d);
+                 if (!check)
+                 {
+                     ErrorBox.Text = "Invalid input. Please enter numbers only.";
+                     ConvertedAmount.Text = string.Empty;
+                     return;
+                 }
        
+             
             if (Combo1.SelectedIndex == 0 && Combo2.SelectedIndex == 1)
-                {
+            {
+                ErrorBox.Text = string.Empty;
+                ConvertedAmount.Text = (d / 0.8997).ToString("0.00 $");
                 
-                //Muunnetaan eurot dollareiksi
-                double t = d / 0.8997;
-                ConvertedAmount.Text = "Converted Amount: " + t.ToString("0.00") + "\t $";
             }
             else if (Combo1.SelectedIndex == 1 && Combo2.SelectedIndex == 0)
             {
-                //muunnetaan dollarit euroiksi
-                double t = d * 0.8997;
-                ConvertedAmount.Text = "Converted Amount: " + t.ToString("0.00") + "\t €";
+                ErrorBox.Text = string.Empty;
+                ConvertedAmount.Text = (d * 0.8997).ToString("0.00 €");
+                
             }
-            else
+            else if (Combo1.SelectedIndex == Combo2.SelectedIndex)
             {
-                ConvertedAmount.Text = "You can't convert same currency!";
+                ErrorBox.Text = string.Empty;
+                ConvertedAmount.Text = d.ToString("0.00");
+                
             }
         }
+
+        private void Combo1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void Combo2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+
     }
 }
