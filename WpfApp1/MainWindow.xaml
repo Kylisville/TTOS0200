@@ -9,7 +9,7 @@
     <Grid>
         <TextBox x:Name="txtLeveys" HorizontalAlignment="Left" Height="31" Margin="176,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" />
         <TextBox x:Name="txtKorkeus" HorizontalAlignment="Left" Height="31" Margin="176,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" SpellCheck.IsEnabled="True" />
-        <TextBox x:Name="txtKarmi" HorizontalAlignment="Left" Height="31" Margin="176,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="txtKarmi" HorizontalAlignment="Left" Height="31" Margin="176,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Text="45"/>
         <Button x:Name="btnNappi" Content="Laske" HorizontalAlignment="Left" Height="26" Margin="176,171,0,0" VerticalAlignment="Top" Width="143" Click="btnNappi_Click" Background="#FFF51313"/>
         <TextBlock x:Name="txtIkkunanPintaAla" HorizontalAlignment="Left" Height="25" Margin="176,212,0,0" TextWrapping="Wrap" Text="Ikkunan Pinta-ala: " VerticalAlignment="Top" Width="143"/>
         <TextBlock x:Name="txtLasinPintaAla" HorizontalAlignment="Left" Height="25" Margin="176,242,0,0" TextWrapping="Wrap" Text="Lasin Pinta-ala: " VerticalAlignment="Top" Width="143"/>

@@ -42,45 +42,53 @@ namespace CurrencyConverter
     
         private void Conversion()
         {
-            //tarkastetaan onko syöttö luku
-                 bool check = double.TryParse(Amount.Text, out double d);
-                 if (!check)
-                 {
-                     ErrorBox.Text = "Invalid input. Please enter numbers only.";
-                     ConvertedAmount.Text = string.Empty;
-                     return;
-                 }
-       
-             
-            if (Combo1.SelectedIndex == 0 && Combo2.SelectedIndex == 1)
+            try
             {
-                ErrorBox.Text = string.Empty;
-                ConvertedAmount.Text = (d / 0.8997).ToString("0.00 $");
-                
+                //tarkastetaan onko syöttö luku
+                bool check = double.TryParse(Amount.Text, out double d);
+                if (!check)
+                {
+                    ErrorBox.Text = "Invalid input. Please enter numbers only.";
+                    ConvertedAmount.Text = string.Empty;
+                    return;
+                }
+
+
+                if (Combo1.SelectedIndex == 0 && Combo2.SelectedIndex == 1)
+                {
+                    ErrorBox.Text = string.Empty;
+                    ConvertedAmount.Text = (d / 0.8997).ToString("0.00 $");
+
+                }
+                else if (Combo1.SelectedIndex == 1 && Combo2.SelectedIndex == 0)
+                {
+                    ErrorBox.Text = string.Empty;
+                    ConvertedAmount.Text = (d * 0.8997).ToString("0.00 €");
+
+                }
+                else if (Combo1.SelectedIndex == Combo2.SelectedIndex)
+                {
+                    ErrorBox.Text = string.Empty;
+                    ConvertedAmount.Text = d.ToString("0.00");
+
+                }
             }
-            else if (Combo1.SelectedIndex == 1 && Combo2.SelectedIndex == 0)
+            catch (Exception)
             {
-                ErrorBox.Text = string.Empty;
-                ConvertedAmount.Text = (d * 0.8997).ToString("0.00 €");
-                
-            }
-            else if (Combo1.SelectedIndex == Combo2.SelectedIndex)
-            {
-                ErrorBox.Text = string.Empty;
-                ConvertedAmount.Text = d.ToString("0.00");
-                
+                ErrorBox.Text = "Invalid input. Please enter numbers only.";
             }
         }
 
         private void Combo1_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+          // Conversion();
+
 
         }
 
         private void Combo2_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            // Conversion();
         }
 
 
