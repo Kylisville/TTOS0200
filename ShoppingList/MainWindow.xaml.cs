@@ -13,8 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
-namespace Checkbox
+namespace ShoppingList
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -28,15 +27,32 @@ namespace Checkbox
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            foreach (object o in STpanel.Children)
+            try
             {
-                if (o is CheckBox)
+                List.Clear();
+                foreach (object o in STpanel.Children)
                 {
-                    CheckBox cb = (CheckBox)control;
+                    if (o is CheckBox)
+                    {
+                       
+                        CheckBox cb = (CheckBox)o;
+                        if ((bool)cb.IsChecked)
+                        {
+                           
+                            List.Text += cb.Content + " ";
+                           
+                        }
+                   
+
+                    }
+                    
                 }
             }
+            catch
+            {
+                // do something
+            }
+        
         }
     }
-
 }
-

@@ -13,30 +13,25 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
-namespace Checkbox
+namespace Team
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        private List<Players> pelaajat;
         public MainWindow()
         {
             InitializeComponent();
+            Title = "Saipa 2017-2018";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void HaePelaajat_Click(object sender, RoutedEventArgs e)
         {
-            foreach (object o in STpanel.Children)
-            {
-                if (o is CheckBox)
-                {
-                    CheckBox cb = (CheckBox)control;
-                }
-            }
+            pelaajat = Joukkue.HaePelaajat();
+            PlayerList.ItemsSource = pelaajat;
         }
     }
-
 }
-
