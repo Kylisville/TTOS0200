@@ -56,7 +56,6 @@ namespace UltimateSauna
                         }
                         else
                         {
-                           
                             Humi.Text = input.ToString("N2");
                             Input.Text = String.Empty;
                         }

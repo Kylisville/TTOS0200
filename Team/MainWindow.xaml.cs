@@ -20,14 +20,12 @@ namespace Team
     /// </summary>
     public partial class MainWindow : Window
     {
-        
         private List<Players> pelaajat;
         public MainWindow()
         {
             InitializeComponent();
             Title = "Saipa 2017-2018";
         }
-
         private void HaePelaajat_Click(object sender, RoutedEventArgs e)
         {
             pelaajat = Joukkue.HaePelaajat();

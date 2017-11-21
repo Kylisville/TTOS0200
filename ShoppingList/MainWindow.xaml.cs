@@ -24,7 +24,6 @@ namespace ShoppingList
         {
             InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -34,25 +33,19 @@ namespace ShoppingList
                 {
                     if (o is CheckBox)
                     {
-                       
                         CheckBox cb = (CheckBox)o;
                         if ((bool)cb.IsChecked)
                         {
-                           
                             List.Text += cb.Content + " ";
                            
                         }
-                   
-
                     }
-                    
                 }
             }
             catch
             {
                 // do something
             }
-        
         }
     }
 }

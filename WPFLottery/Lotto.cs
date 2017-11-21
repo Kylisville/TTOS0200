@@ -34,7 +34,7 @@ namespace WPFLottery
                 {
                     while (!draw)
                     {
-                        int number = rng.Next(1, 39 + 1);
+                        int number = rng.Next(1, 40 + 1);
                         if(!Numbers.Contains(number))
                         {
                             Numbers.Add(number);
