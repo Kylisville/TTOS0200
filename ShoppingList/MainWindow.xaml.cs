@@ -42,7 +42,7 @@ namespace ShoppingList
                     }
                 }
             }
-            catch
+            catch(Exception)
             {
                 // do something
             }
